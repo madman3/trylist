@@ -1,0 +1,39 @@
+<h1>Listing things</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Kind</th>
+      <th>Category</th>
+      <th>Locality</th>
+      <th>Location</th>
+      <th>Directions</th>
+      <th>Review</th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @things.each do |thing| %>
+      <tr>
+        <td><%= thing.name %></td>
+        <td><%= thing.kind %></td>
+        <td><%= thing.category %></td>
+        <td><%= thing.locality %></td>
+        <td><%= thing.location %></td>
+        <td><%= thing.directions %></td>
+        <td><%= thing.review %></td>
+        <td><%= link_to 'Show', thing %></td>
+        <td><%= link_to 'Edit', edit_thing_path(thing) %></td>
+        <td><%= link_to 'Destroy', thing, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Thing', new_thing_path %>

@@ -1,0 +1,19 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  name: MyString
+  kind: MyString
+  category: MyString
+  locality: MyString
+  location: MyString
+  directions: MyString
+  review: MyString
+
+two:
+  name: MyString
+  kind: MyString
+  category: MyString
+  locality: MyString
+  location: MyString
+  directions: MyString
+  review: MyString
